@@ -21,7 +21,7 @@ div.top{
     align-items: center;
     justify-content: center;
     color: #ff0000;
-    font-family: "Imperial Scipt", cursive;
+    font-family: "Imperial Script", cursive;
 }
 
 .cart-link {
@@ -61,7 +61,6 @@ div.cart{
 }
 
 h1, h3 {
-    top: 150px;
     text-align: center;
 }
 

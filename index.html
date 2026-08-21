@@ -30,7 +30,7 @@
         </header>
 
         <main class="shop-container">
-            <h1>Our Fresh Roses</h1>
+            <h1>Our Farm Fresh Goods</h1>
             <div id="product-grid" class="grid"></div>
         </main>
 
@@ -52,6 +52,11 @@
                     <h3 class="item-title">${rose.name}</h3>
                     <p class="item-price">${rose.price}</p>
                     <button class="add-btn">Add to Cart</button>`;
+
+                    const button = itemDiv.querySelector('.add-btn');
+                    button.addEventListener('click', () => {
+                        console.log(`Added ${rose.name} to cart`);
+                    });
 
                 grid.appendChild(itemDiv);
             });
