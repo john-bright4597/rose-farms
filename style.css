@@ -1,0 +1,67 @@
+
+.imperial-script-regular {
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100;
+}
+
+div.top{
+    position: relative;
+    width: 100vw;
+    height: 15vh;
+    background-color: #ec0ad9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff0000;
+    font-family: "Imperial Scipt", cursive;
+}
+
+.cart-link {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;          
+  right: -5px;       
+  background-color: #ff3b30; 
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%; 
+  padding: 2px 6px;
+  min-width: 12px;
+  text-align: center;
+}
+
+header.top{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+div.top h2{
+    margin: 0;
+    font-size: 60px;
+}
+
+div.cart{
+    position: absolute;
+    right: 50px;
+}
+
+h3 {
+    top: 150px;
+    text-align: center;
+    font-family: "Imperial Scipt", cursive;
+}
