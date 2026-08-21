@@ -24,8 +24,38 @@
                     <a href="cart.html" class="cart-link">
                         <img src="cart-symbol.png" alt="cart logo" width="50" height="50">
                         <span class="cart-count">3</span>
+                    </a>
                 </div>
             </div>
         </header>
+
+        <main class="shop-container">
+            <h1>Our Fresh Roses</h1>
+            <div id="product-grid" class="grid"></div>
+        </main>
+
+        <script>
+            const roses = [
+                { name: "EGGS", price: "$6.70", img: "red-rose.png" },
+                { name: "HOENY", price: "$6.70", img: "white-rose.png" },
+                { name: "BOI", price: "$6.70", img: "pink-rose.png" },
+                { name: "BOI", price: "$6.70", img: "yellow-rose.png" }
+            ];
+
+            const grid = document.getElementById('product-grid');
+
+            roses.forEach(rose => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'item-card';
+                itemDiv.innerHTML = `
+                    <img src="${rose.img}" alt="${rose.name}" class="item-img">
+                    <h3 class="item-title">${rose.name}</h3>
+                    <p class="item-price">${rose.price}</p>
+                    <button class="add-btn">Add to Cart</button>`;
+
+                grid.appendChild(itemDiv);
+            });
+        </script>
+
     </body>
 </html>
